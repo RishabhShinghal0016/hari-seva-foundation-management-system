@@ -1,0 +1,324 @@
+{
+  "users": [
+    {
+      "id": "2c746207-684c-4958-b3b1-a8f4a1af983a",
+      "createdAt": "2026-07-31T00:39:15.965Z",
+      "name": "Rishabh Shinghal",
+      "email": "rishabhshngl121@gmail.com",
+      "mobile": "8630197225",
+      "password": "$2a$10$WzwJwQj2ab7QEqwN9DfGOO4H8JfO/XKEoGk0.uOaBrahh9G4kqxhW",
+      "role": "admin"
+    },
+    {
+      "id": "121f7f09-d593-4d8b-99f2-1b1117b68027",
+      "createdAt": "2026-07-31T00:39:15.965Z",
+      "name": "Anita Verma",
+      "email": "donor@example.com",
+      "mobile": "9876500001",
+      "password": "$2a$10$WzwJwQj2ab7QEqwN9DfGOO4H8JfO/XKEoGk0.uOaBrahh9G4kqxhW",
+      "role": "donor"
+    },
+    {
+      "id": "e28f2e95-0feb-4e1e-bf82-1e8aece39171",
+      "createdAt": "2026-07-31T00:39:15.965Z",
+      "name": "Rahul Mehta",
+      "email": "volunteer@example.com",
+      "mobile": "9876500002",
+      "password": "$2a$10$WzwJwQj2ab7QEqwN9DfGOO4H8JfO/XKEoGk0.uOaBrahh9G4kqxhW",
+      "role": "volunteer",
+      "skills": "Cooking, Logistics",
+      "availability": "Weekends",
+      "totalEvents": 0,
+      "totalHours": 0
+    },
+    {
+      "id": "8df46c18-31a8-4d79-856a-4037e7d11254",
+      "createdAt": "2026-07-31T00:39:15.965Z",
+      "name": "Shanti Bhawan Community Hall",
+      "email": "partner@example.com",
+      "mobile": "9876500003",
+      "password": "$2a$10$WzwJwQj2ab7QEqwN9DfGOO4H8JfO/XKEoGk0.uOaBrahh9G4kqxhW",
+      "role": "partner",
+      "address": "Civil Lines, Bareilly, UP",
+      "facilities": "Kitchen, Hall for 200, Parking"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "ff77e7da-05ac-47f9-8d1c-17f4ed78683d",
+      "createdAt": "2026-07-31T00:39:15.966Z",
+      "name": "Independence Day Food Distribution",
+      "description": "A special food distribution drive to mark Independence Day, serving nutritious meals to families in underserved neighbourhoods of Bareilly.",
+      "bannerImage": "",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-16",
+      "location": "Bareilly, Uttar Pradesh",
+      "targetAmount": 60000,
+      "raisedAmount": 21500,
+      "requiredMaterials": [
+        {
+          "item": "Rice",
+          "unit": "KG",
+          "required": 50,
+          "received": 35
+        },
+        {
+          "item": "Oil",
+          "unit": "Litres",
+          "required": 20,
+          "received": 10
+        },
+        {
+          "item": "Pulses",
+          "unit": "KG",
+          "required": 30,
+          "received": 12
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "09e15dc1-b223-42a3-a9e8-5b1420dcc71c",
+      "createdAt": "2026-07-31T00:39:15.966Z",
+      "name": "Winter Relief Campaign",
+      "description": "Distributing blankets, warm clothes, and hot meals to homeless and daily-wage families through the winter months.",
+      "bannerImage": "",
+      "startDate": "2026-12-01",
+      "endDate": "2027-01-31",
+      "location": "Bareilly & Rampur, Uttar Pradesh",
+      "targetAmount": 150000,
+      "raisedAmount": 4000,
+      "requiredMaterials": [
+        {
+          "item": "Blankets",
+          "unit": "Pieces",
+          "required": 300,
+          "received": 40
+        },
+        {
+          "item": "Milk",
+          "unit": "Litres",
+          "required": 100,
+          "received": 0
+        }
+      ],
+      "status": "upcoming"
+    },
+    {
+      "id": "55b2e83e-da2e-48ec-a78a-b873c2bf9ef4",
+      "createdAt": "2026-07-31T00:39:15.966Z",
+      "name": "School Kit Distribution",
+      "description": "Providing bags, notebooks, and stationery kits to children from low-income families to support their education.",
+      "bannerImage": "",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "location": "Bareilly, Uttar Pradesh",
+      "targetAmount": 40000,
+      "raisedAmount": 40000,
+      "requiredMaterials": [
+        {
+          "item": "School Supplies",
+          "unit": "Kits",
+          "required": 200,
+          "received": 200
+        }
+      ],
+      "status": "completed"
+    }
+  ],
+  "foodDrives": [
+    {
+      "id": "4a7bcef5-c6ea-4688-9c4a-0fcbc94d00ca",
+      "createdAt": "2026-07-31T00:39:15.966Z",
+      "name": "Monthly Food Distribution Drive",
+      "description": "Our regular monthly drive serving hot, freshly cooked meals to families in need.",
+      "campaignId": "ff77e7da-05ac-47f9-8d1c-17f4ed78683d",
+      "date": "2026-08-10",
+      "time": "10:00 AM",
+      "location": "Bareilly",
+      "address": "Community Ground, Civil Lines, Bareilly, Uttar Pradesh",
+      "mapsLink": "https://maps.google.com/?q=Bareilly",
+      "posterImage": "",
+      "volunteersRequired": 15,
+      "assignedVolunteers": [],
+      "targetMeals": 500,
+      "mealsDistributed": 0,
+      "requiredMaterials": [
+        {
+          "item": "Rice",
+          "required": 60,
+          "received": 0,
+          "unit": "KG"
+        },
+        {
+          "item": "Oil",
+          "required": 15,
+          "received": 0,
+          "unit": "Litres"
+        },
+        {
+          "item": "Vegetables",
+          "required": 40,
+          "received": 0,
+          "unit": "KG"
+        }
+      ],
+      "targetAmount": 25000,
+      "raisedAmount": 0,
+      "photos": [],
+      "status": "upcoming"
+    },
+    {
+      "id": "bb6dca80-8e9b-4b9e-9fac-0a8096e58d5b",
+      "createdAt": "2026-07-31T00:39:15.966Z",
+      "name": "Independence Day Meal Distribution",
+      "description": "Serving 800 meals across three localities to mark Independence Day.",
+      "campaignId": "ff77e7da-05ac-47f9-8d1c-17f4ed78683d",
+      "date": "2026-08-15",
+      "time": "9:00 AM",
+      "location": "Bareilly",
+      "address": "Multiple points, Bareilly, Uttar Pradesh",
+      "mapsLink": "https://maps.google.com/?q=Bareilly",
+      "posterImage": "",
+      "volunteersRequired": 25,
+      "assignedVolunteers": [],
+      "targetMeals": 800,
+      "mealsDistributed": 0,
+      "requiredMaterials": [
+        {
+          "item": "Rice",
+          "required": 100,
+          "received": 0,
+          "unit": "KG"
+        },
+        {
+          "item": "Water Bottles",
+          "required": 800,
+          "received": 0,
+          "unit": "Pieces"
+        },
+        {
+          "item": "Plates",
+          "required": 800,
+          "received": 0,
+          "unit": "Pieces"
+        }
+      ],
+      "targetAmount": 45000,
+      "raisedAmount": 0,
+      "photos": [],
+      "status": "upcoming"
+    },
+    {
+      "id": "5bd49370-7c5a-4140-add5-d41d2c266fa3",
+      "createdAt": "2026-07-31T00:39:15.966Z",
+      "name": "School Kit Handover Day",
+      "description": "Handed over 200 school kits to children across five schools.",
+      "campaignId": null,
+      "date": "2026-06-25",
+      "time": "11:00 AM",
+      "location": "Bareilly",
+      "address": "Govt. Primary Schools, Bareilly",
+      "mapsLink": "https://maps.google.com/?q=Bareilly",
+      "posterImage": "",
+      "volunteersRequired": 10,
+      "assignedVolunteers": [],
+      "targetMeals": 0,
+      "mealsDistributed": 0,
+      "photos": [],
+      "status": "completed"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "88f4f576-c8c5-4520-acc3-639329320813",
+      "createdAt": "2026-07-31T00:39:15.967Z",
+      "item": "Rice",
+      "category": "Food",
+      "unit": "KG",
+      "quantity": 35,
+      "lowStockThreshold": 20
+    },
+    {
+      "id": "f5527ae1-59cb-4d88-9e46-17f27517a082",
+      "createdAt": "2026-07-31T00:39:15.968Z",
+      "item": "Oil",
+      "category": "Food",
+      "unit": "Litres",
+      "quantity": 10,
+      "lowStockThreshold": 15
+    },
+    {
+      "id": "c1c412f8-5a5d-471f-adbc-b9ef3a2fc793",
+      "createdAt": "2026-07-31T00:39:15.968Z",
+      "item": "Pulses",
+      "category": "Food",
+      "unit": "KG",
+      "quantity": 12,
+      "lowStockThreshold": 15
+    },
+    {
+      "id": "06fa6baa-9ffa-46aa-b894-055ba6e973fe",
+      "createdAt": "2026-07-31T00:39:15.968Z",
+      "item": "Blankets",
+      "category": "Winter Supplies",
+      "unit": "Pieces",
+      "quantity": 40,
+      "lowStockThreshold": 50
+    },
+    {
+      "id": "340b2b12-0b05-4cac-87de-349390b9c536",
+      "createdAt": "2026-07-31T00:39:15.968Z",
+      "item": "School Kits",
+      "category": "School Supplies",
+      "unit": "Kits",
+      "quantity": 0,
+      "lowStockThreshold": 10
+    }
+  ],
+  "donations": [
+    {
+      "id": "ad5016e9-fe7d-4a04-9fbf-4992145a66f5",
+      "createdAt": "2026-07-31T00:39:15.968Z",
+      "donorName": "Anita Verma",
+      "donorId": null,
+      "type": "money",
+      "amount": 5000,
+      "campaignId": "ff77e7da-05ac-47f9-8d1c-17f4ed78683d",
+      "transactionId": "UPI2026081001",
+      "paymentScreenshot": "",
+      "status": "verified",
+      "receiptNumber": "HSF-RCPT-1001"
+    },
+    {
+      "id": "fbb8cdce-f9ed-49c6-9192-eb217767792a",
+      "createdAt": "2026-07-31T00:39:15.968Z",
+      "donorName": "Anonymous Well-wisher",
+      "donorId": null,
+      "type": "material",
+      "material": "Rice",
+      "quantity": 20,
+      "unit": "KG",
+      "campaignId": "ff77e7da-05ac-47f9-8d1c-17f4ed78683d",
+      "status": "verified",
+      "receiptNumber": "HSF-RCPT-1002"
+    }
+  ],
+  "settings": [
+    {
+      "id": "6775fb88-5940-4bde-98be-5c4a72c9be1d",
+      "createdAt": "2026-07-31T00:39:15.969Z",
+      "key": "upiId",
+      "value": "rishabhshngl121@okhdfcbank"
+    },
+    {
+      "id": "ce3dc89d-9168-498a-ad1a-41b91f6b01ba",
+      "createdAt": "2026-07-31T00:39:15.969Z",
+      "key": "orgStats",
+      "value": {
+        "totalBeneficiaries": 3200,
+        "locationsCovered": 14
+      }
+    }
+  ]
+}
