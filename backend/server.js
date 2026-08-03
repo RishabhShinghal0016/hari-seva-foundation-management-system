@@ -3,6 +3,25 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const fs = require("fs");
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+const allowedOrigins = [
+  'https://hariseva.netlify.app',
+  'http://localhost:5173' // or your local frontend port
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 
 const app = express();
 const PORT = process.env.PORT || 5000;
