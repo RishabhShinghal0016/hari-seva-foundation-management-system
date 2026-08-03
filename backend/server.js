@@ -3,8 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const fs = require("fs");
-const express = require('express');
-const cors = require('cors');
+
 const app = express();
 
 const allowedOrigins = [
@@ -12,6 +11,7 @@ const allowedOrigins = [
   'http://localhost:5173' // or your local frontend port
 ];
 
+// Configure CORS for Netlify frontend & local development
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -25,7 +25,6 @@ app.use(cors({
 
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
 app.use(express.json({ limit: "5mb" }));
 
 // Serve uploaded/static assets (QR code, logo, profile pic fallback)
@@ -52,10 +51,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Something went wrong on the server." });
 });
 
-// Vercel imports this file as a serverless function handler and never calls it
-// directly, so only start a normal listening server everywhere else (local
-// dev, Render, Railway, etc.) — otherwise Vercel would try (and fail) to bind
-// a real port inside its serverless environment.
+// Start listening server for local dev, Render, Railway, etc.
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`Hari Seva Foundation Management System API running on http://localhost:${PORT}`);
