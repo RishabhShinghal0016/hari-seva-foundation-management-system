@@ -7,7 +7,7 @@ const fs = require("fs");
 const app = express();
 
 const allowedOrigins = [
-  'https://hariseva.netlify.app',
+  'https://hariseva.netlify.app/',
   'http://localhost:5173' // or your local frontend port
 ];
 
